@@ -4,8 +4,6 @@ import {
   ArrowLeftOnRectangleIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
-import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
-
 interface NavigationProps {
   userInfo: any;
   handleSignOutClick: (
