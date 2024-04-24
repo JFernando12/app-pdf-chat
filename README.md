@@ -64,7 +64,7 @@ If you want to change the default models or Bedrock Region, edit `Bedrock` and `
 
 ```python
 Bedrock(
-   model_id="anthropic.claude-v2", #adjust to use different model
+   model_id="anthropic.claude-3-sonnet-20240229-v1:0", #adjust to use different model
    region_name="us-east-1", #adjust if not using us-east-1
 )
 ```
@@ -83,8 +83,8 @@ GenerateResponseFunction:
             Effect: "Allow"
             Action: "bedrock:InvokeModel"
             Resource:
-              - "arn:aws:bedrock:*::foundation-model/anthropic.claude-v2" # adjust with different model
-              - "arn:aws:bedrock:*::foundation-model/amazon.titan-embed-text-v1" # adjust with different model
+              - "arn:aws:bedrock:*::foundation-model/anthropic.claude-3-sonnet-20240229-v1:0" # adjust with different model
+              - "arn:aws:bedrock:*::foundation-model/cohere.embed-multilingual-v3" # adjust with different model
 ```
 
 ### Deploy the application with AWS SAM
